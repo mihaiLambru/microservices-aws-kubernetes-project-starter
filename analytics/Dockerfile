@@ -9,10 +9,10 @@ RUN apt-get update && \
 
 # Clone your desired repository (replace the placeholder URL with your repository's URL)
 RUN git clone https://github.com/udacity/cd12355-microservices-aws-kubernetes-project-starter.git /app
-RUN ls
+
 # Set the working directory in the container to /app
-WORKDIR /app
-RUN ls
+WORKDIR /app/analytics
+
 # Install any needed packages specified in requirements.txt
 # Make sure you have Flask, Flask-SQLAlchemy, psycopg2, etc., listed in your requirements.txt file
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
