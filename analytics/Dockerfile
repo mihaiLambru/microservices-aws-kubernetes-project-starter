@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Clone your desired repository (replace the placeholder URL with your repository's URL)
-RUN git clone https://github.com/udacity/cd12355-microservices-aws-kubernetes-project-starter.git /app
+RUN git clone https://github.com/mihaiLambru/microservices-aws-kubernetes-project-starter.git /app
 
 # Set the working directory in the container to /app
 WORKDIR /app/analytics
